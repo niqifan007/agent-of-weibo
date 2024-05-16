@@ -1,20 +1,17 @@
 # Weibo Crew
 
-Welcome to the Weibo Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+欢迎来到由 [crewAI](https://crewai.com) 提供支持的微博 Crew 项目。该模板旨在帮助您利用crewAI提供的强大而灵活的框架轻松设置多代理人工智能系统。我们的目标是使您的代理能够有效地协作完成复杂的任务，最大限度地发挥他们的集体智慧和能力。
 
 ## Installation
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [Poetry](https://python-poetry.org/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install Poetry:
 
 ```bash
 pip install poetry
 ```
 
-Next, navigate to your project directory and install the dependencies:
+接下来，导航到您的项目目录并安装依赖项：
 
-1. First lock the dependencies and then install them:
+1. 首先锁定依赖项，然后安装它们：
 ```bash
 poetry lock
 ```
@@ -25,33 +22,23 @@ poetry install
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
 
-- Modify `src/weibo/config/agents.yaml` to define your agents
-- Modify `src/weibo/config/tasks.yaml` to define your tasks
-- Modify `src/weibo/crew.py` to add your own logic, tools and specific args
-- Modify `src/weibo/main.py` to add custom inputs for your agents and tasks
+- 修改 `src/weibo/config/agents.yaml` 来定义您的代理
+- 修改`src/weibo/config/tasks.yaml`来定义您的任务
+- 修改 `src/weibo/crew.py` 添加您自己的逻辑、工具和特定参数
+- 修改 `src/weibo/main.py` 为您的代理和任务添加自定义输入
 
 ## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+要启动您的 AI 代理团队并开始执行任务，请从项目的根文件夹运行以下命令：
 
 ```bash
 poetry run weibo
 ```
 
-This command initializes the weibo Crew, assembling the agents and assigning them tasks as defined in your configuration.
+此命令初始化 weibo Crew，组装代理并按照您的配置中定义的方式为它们分配任务。
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folser
+此示例未经修改，将运行创建一个“report.md”文件，其中包含根文件夹中 LLM 研究的输出
 
 ## Understanding Your Crew
 
-The weibo Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Weibo Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Joing our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat wtih our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+微博Crew由多个AI代理组成，每个代理都有独特的角色、目标和工具。这些代理协作执行“config/tasks.yaml”中定义的一系列任务，利用他们的集体技能来实现复杂的目标。 `config/agents.yaml` 文件概述了团队中每个代理的功能和配置。

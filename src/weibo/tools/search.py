@@ -17,7 +17,7 @@ class SearchTools:
   @tool('search weibo')
   def search_weibo(query: str) -> str:
     """
-    使用此工具搜索微博。此工具可从weibo页面返回 5 条结果。
+    使用此工具搜索微博。该工具可从微博页面返回 5 条结果。
     """
     return SearchTools.search(f"site:weibo.com {query}", limit=5)
     
@@ -49,7 +49,7 @@ class SearchTools:
     for result in results:
       string.append(f"{result['title']}\n{result['snippet']}\n{result['link']}\n\n")
       
-    return f"搜索结果如下: '{query}':\n\n" + "\n".join(string)
+    return f"Search results for '{query}':\n\n" + "\n".join(string)
   
   
 if __name__ == "__main__":
